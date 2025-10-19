@@ -437,25 +437,56 @@ body {
     box-sizing: border-box;
 }
 
-@media (max-width: 991px) {
-    .punto-acento {
-        display: none;
+@media (max-width: 575.98px) {
+    header .nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
     }
 
-    .avatar-opinion {
-        margin-top: -40px;
-        width: 90px;
-        height: 90px;
+    header .iconos-d {
+        gap: 1rem;
     }
 
-    .porcentaje-resena {
-        font-size: 2.2rem;
-        color: #f36a7a;
+    .logoHome {
+        width: 80%;
+        max-width: 200px;
     }
 
-    .columna-pie {
-        padding: 28px 16px;
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .navegacion-secciones {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .bloque-contenido {
+        min-height: 250px;
         text-align: center;
-        justify-content: center;
+    }
+
+    .tarjeta-opinion {
+        margin: 0 auto;
+    }
+
+    footer .contenido-interno {
+        text-align: center;
+        padding: 1rem 0;
     }
 }
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .logoHome {
+        width: 60%;
+        max-width: 250px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .bloque-contenido {
+        min-height: 3
